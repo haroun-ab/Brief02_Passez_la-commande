@@ -140,7 +140,7 @@ document.querySelector("#btnPopup").addEventListener("click", (e) => {
             sellBtn.classList.add("btn")
             sellBtn.classList.add("btn-sell")
             sellBtn.addEventListener("click", () => {
-                document.location = "./index-paiement.html"
+                document.location.pathname = "./index-paiement.html"
             })
             document.querySelector("#content").appendChild(sellBtn)
         }
