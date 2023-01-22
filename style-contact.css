@@ -1,0 +1,166 @@
+
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+ 
+}
+
+.contact-formulaire div{
+    margin: 25px 0;
+}
+
+.contact-formulaire h2{
+    font-size: 20px;
+}
+
+.team-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color2);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    font-weight: 600;
+}
+
+.team-btn:hover {
+    bottom: 1px solid black;
+    background: green;
+    border-radius: 12px;
+    transition: 1s;
+    color: white;
+    border-color: green;
+}
+
+.form{
+    width:500px;
+    height: fit-content;
+    margin: 2%;
+    background: whitesmoke;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.336);
+    padding:20px 30px;
+    box-sizing:border-box;
+    position:relative;
+    color: black;
+    background: white;
+}
+
+.form h2{
+    margin:10px 0 50px 0;
+    padding-bottom:10px;
+    width:100%;
+    color: black;
+    border-bottom:3px solid;
+    text-align: center;
+}
+
+.contact-container{
+    text-align: start;
+}
+
+.form label{
+    font-size: 14px;
+}
+
+.form input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background: rgb(227, 227, 227);
+    outline:none;
+    resize:none;
+    border: #dedede70 2px solid;
+    transition:all .3s;
+    color: var(--color4);
+    font-size: 14px;
+}
+
+.form textarea{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background: rgb(227, 227, 227);
+    outline:none;
+    resize:none;
+    border: #dedede70 2px solid;
+    transition:all .3s;
+    color: var(--color4);
+    font-size: 14px;
+}
+
+.form input::placeholder {
+    color: black;
+}
+
+.form input:focus,
+.form textarea:focus{
+    border-bottom:2px solid black;
+}
+
+.form p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:black;
+}
+.form button{
+    height: max-content;
+    width: 100%;
+    padding:10px 12px;
+    margin: 20px 0 ;
+    background-color: whitesmoke;
+}
+
+.form span{
+    margin:0 10px 0 15px;
+    color: black;
+}
+
+iframe {
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.336);
+    border-radius: 15px;
+    height: 490px;
+}
+
+@media (max-width: 768px){
+    #contact {
+        padding: 5%;
+    }
+
+    iframe, .form, .contact-formulaire, .contact-map{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .form{
+        box-shadow:0 0 10px rgba(0, 0, 0, 0.336);
+    }
+
+    .form h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-formulaire button{
+        height: max-content;
+        float: none;
+        margin: 30px 0 ;
+        width: 100%;
+    }
+     
+}

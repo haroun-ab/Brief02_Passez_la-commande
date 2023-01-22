@@ -1,0 +1,87 @@
+.order{
+    min-height: 90%
+}
+.order form{
+    max-width:100rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:.1rem solid rgba(0,0,0,.2);
+    background:#fff;
+    padding:2rem;
+    margin:0 auto;
+}
+
+.order form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.order form .inputBox .input{
+    width:49%;
+}
+
+.order form .inputBox .input span{
+    display:block;
+    padding: .5rem 0;
+    font-size: 1.8rem;
+    color:var(--light-color);
+}
+
+.order form .inputBox .input input,
+.order form .inputBox .input #total,
+.order form .inputBox .input textarea{
+    background:#eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width:100%;
+    height: 40px;
+}
+
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus{
+    border:.1rem solid green;
+}
+
+.order form .inputBox .input textarea{
+    height:12.5rem;
+    resize: none;
+}
+
+.order form .btn{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media(max-width : 768px){
+    .order form{
+        max-width:none;
+        width: 100%;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        border:.1rem solid rgba(0,0,0,.2);
+        background:#fff;
+        padding:1rem;
+        margin:0 auto;
+    }
+
+    .order{
+        padding-left:  5%;
+        padding-right:  5%;
+    }
+
+    .order form .inputBox{
+        flex-direction: column;
+    }
+    
+    .order form .inputBox .input{
+        width:95%;
+        margin: auto;
+    }
+}
